@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stonehaven Restaurant &amp; Winery</title>
+    <meta name="description" content="Stonehaven Restaurant & Winery in Kololo, Kampala. Refined dining, garden ambiance, crafted cocktails, breakfast, lunch, dinner, and reservations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="Media/logo.png">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar__inner">
+        <a href="#visit">8 Malcolm X Avenue, Kololo</a>
+        <a href="tel:+256709342064">+256 709 342 064</a>
+        <a href="mailto:reservations@stonehaven.ug">reservations@stonehaven.ug</a>
+      </div>
+    </div>
+
+    <header class="site-header" data-header>
+      <button class="icon-button site-header__menu" type="button" data-open-panel="menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav site-nav--left" aria-label="Primary navigation left">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="menu.html">Menu</a>
+      </nav>
+      <a class="brand" href="index.html" aria-label="Stonehaven home">
+        <img src="Media/logo.png" alt="Stonehaven logo" class="brand__mark">
+        <span class="brand__text">Stonehaven</span>
+      </a>
+      <nav class="site-nav site-nav--right" aria-label="Primary navigation right">
+        <a href="gallery.html">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve">Reservations</a>
+      </nav>
+      <div class="site-header__actions"><a class="outline-button site-header__reserve" href="#reserve">Book</a></div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="Stonehaven dining experience">
+        <div class="hero__slides">
+          <div class="hero__slide is-active"><img src="Media/ambiance .png" alt="Stonehaven covered terrace dining"></div>
+          <div class="hero__slide"><img src="Media/More ambiance.png" alt="Stonehaven garden terrace"></div>
+          <div class="hero__slide"><img src="Media/BBQ.png" alt="Stonehaven outdoor barbecue preparation"></div>
+          <div class="hero__slide"><img src="Media/Fresh_juices.png" alt="Stonehaven fresh juices"></div>
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content reveal">
+          <p class="eyebrow">Restaurant &amp; Winery - Kololo</p>
+          <h1>Stonehaven</h1>
+          <p>Garden dining, refined plates, crafted cocktails, and a warm Kampala welcome from breakfast through dinner.</p>
+          <div class="hero__actions">
+            <a class="solid-button" href="#reserve">Reserve a Table</a>
+            <a class="ghost-button" href="menu.html">View Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section" id="about">
+        <div class="section__inner intro__grid">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Our Story</p>
+            <h2>Crafted for those who savour the moment</h2>
+            <p>Stonehaven brings together serene garden dining, polished service, and a kitchen built around generous plates, fresh ingredients, and memorable drinks.</p>
+            <p>From quiet morning breakfasts to relaxed lunches and candlelit dinners, the restaurant is designed for lingering conversations and beautifully composed meals.</p>
+            <div class="feature-stats">
+              <span><strong>Daily</strong> Breakfast to dinner</span>
+              <span><strong>Garden</strong> Terrace seating</span>
+              <span><strong>Cellar</strong> Wine selection</span>
+            </div>
+            <a class="text-link" href="#reserve">Experience Stonehaven</a>
+          </div>
+          <div class="image-pair reveal">
+            <img src="Media/More ambiance.png" alt="Stonehaven outdoor garden seating">
+            <img src="Media/Waiter and burger.png" alt="Stonehaven waiter presenting a burger">
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-preview section section--dark" id="menu-preview">
+        <div class="section__inner">
+          <div class="center-heading reveal">
+            <p class="eyebrow">From the Kitchen</p>
+            <h2>Signature Tastes</h2>
+            <p>Explore breakfast favourites, rich mains, fresh juices, cocktails, and desserts presented with Stonehaven's relaxed elegance.</p>
+          </div>
+          <div class="menu-tabs reveal" data-menu-tabs></div>
+          <div class="menu-grid reveal" data-menu-grid></div>
+          <div class="center-actions">
+            <a class="solid-button solid-button--light" href="menu.html">View Full Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="split-feature section">
+        <div class="split-feature__image reveal">
+          <video autoplay muted loop playsinline preload="metadata" poster="Media/More ambiance.png">
+            <source src="Media/More atmosphere.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="split-feature__content reveal">
+          <p class="eyebrow">The Atmosphere</p>
+          <h2>Quiet corners, warm service, open-air charm</h2>
+          <p>The space blends garden light, polished interiors, and a calm terrace rhythm. It is equally suited to morning coffee, family lunches, date nights, and private celebrations.</p>
+          <a class="text-link" href="gallery.html">See the Gallery</a>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="section__inner">
+          <div class="center-heading reveal">
+            <p class="eyebrow">Gallery</p>
+            <h2>Dining Moments</h2>
+          </div>
+          <div class="gallery__track reveal">
+            <a class="gallery__item" href="gallery.html"><img src="Media/Lunch .png" alt="Stonehaven plated lunch"></a>
+            <a class="gallery__item" href="gallery.html"><img src="Media/cocktail .png" alt="Stonehaven berry cocktail"></a>
+            <a class="gallery__item" href="gallery.html"><img src="Media/Cake.png" alt="Stonehaven dessert cake"></a>
+            <a class="gallery__item" href="gallery.html"><img src="Media/meat.png" alt="Stonehaven signature meat dish"></a>
+            <a class="gallery__item" href="gallery.html"><img src="Media/morebreakfast2.png" alt="Stonehaven breakfast waffles"></a>
+            <a class="gallery__item" href="gallery.html"><img src="Media/wine.png" alt="Stonehaven cocktail on wooden table"></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit" id="visit">
+        <div class="visit__media"></div>
+        <div class="visit__content reveal">
+          <p class="eyebrow">Come See Us</p>
+          <h2>Find us in Kololo</h2>
+          <p>Stonehaven Restaurant &amp; Winery is open daily for breakfast, lunch, dinner, cocktails, and relaxed garden dining.</p>
+          <div class="visit__details">
+            <span>8 Malcolm X Avenue, Kololo, Kampala</span>
+            <span>Daily 8:00 AM - 11:00 PM</span>
+            <span><a href="tel:+256709342064">+256 709 342 064</a></span>
+          </div>
+          <div class="visit__map">
+            <iframe
+              src="https://www.google.com/maps?q=8+Malcolm+X+Avenue,+Kololo,+Kampala,+Uganda&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Stonehaven Restaurant & Winery location map"
+              allowfullscreen></iframe>
+          </div>
+          <a class="solid-button" href="#reserve">Book a Table</a>
+        </div>
+      </section>
+
+      <section class="reservation-section section" id="reserve">
+        <div class="section__inner reservation-section__grid">
+          <div class="section-copy reveal">
+            <p class="eyebrow">Reservations</p>
+            <h2>Book your table</h2>
+            <p>Fill in the form and your booking request will be sent directly via WhatsApp. For larger groups, call us directly for the best seating options.</p>
+            <div class="contact-list">
+              <a href="tel:+256709342064">+256 709 342 064</a>
+              <a href="mailto:hello@stonehaven.ug">hello@stonehaven.ug</a>
+            </div>
+          </div>
+          <div class="reservation-form reveal" id="whatsappBookingForm">
+            <input type="text" id="wb-name" placeholder="Your Name" aria-label="Your name" required>
+            <input type="tel" id="wb-phone" placeholder="Phone Number" aria-label="Phone number" required>
+            <select id="wb-guests" aria-label="Number of guests" required>
+              <option value="">Guests</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5 Guests</option>
+              <option>6 Guests</option>
+              <option>8+ Guests</option>
+            </select>
+            <input type="date" id="wb-date" aria-label="Booking date" required>
+            <select id="wb-time" aria-label="Booking time" required>
+              <option value="">Time</option>
+              <option>08:00 AM</option>
+              <option>10:30 AM</option>
+              <option>12:30 PM</option>
+              <option>06:30 PM</option>
+              <option>08:00 PM</option>
+              <option>09:00 PM</option>
+            </select>
+            <textarea id="wb-message" placeholder="Special requests (optional)" aria-label="Special requests"></textarea>
+            <button type="button" id="wb-submit" class="solid-button" onclick="sendWhatsAppBooking()">Book via WhatsApp</button>
+            <p class="form-note" id="wb-note"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <a class="brand brand--footer" href="index.html" aria-label="Stonehaven home">
+            <img src="Media/logo.png" alt="Stonehaven logo" class="brand__mark">
+            <span class="brand__text">Stonehaven</span>
+          </a>
+          <p>Restaurant &amp; Winery in Kololo, Kampala, serving polished comfort, garden ambiance, crafted drinks, and memorable dining from morning to evening.</p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Monday - Sunday</p>
+          <p>8:00 AM - 11:00 PM</p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <p>8 Malcolm X Avenue</p>
+          <p>Kololo, Kampala</p>
+          <p><a href="tel:+256709342064">+256 709 342 064</a></p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="menu.html">Menu</a></p>
+          <p><a href="gallery.html">Gallery</a></p>
+          <p><a href="#reserve">Reservations</a></p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">© 2026 Stonehaven Restaurant &amp; Winery. All rights reserved.</div>
+    </footer>
+
+    <aside class="side-panel" data-panel="menu" aria-hidden="true">
+      <button class="panel-close" type="button" data-close-panel>Close</button>
+      <a class="brand" href="index.html">
+        <img src="Media/logo.png" alt="Stonehaven logo" class="brand__mark">
+        <span class="brand__text">Stonehaven</span>
+      </a>
+      <nav class="side-panel__nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="#reserve">Reservations</a>
+      </nav>
+      <div class="side-panel__footer">
+        <p>8 Malcolm X Avenue, Kololo</p>
+        <p>+256 709 342 064</p>
+        <p>reservations@stonehaven.ug</p>
+      </div>
+    </aside>
+
+    <aside class="search-screen" data-panel="search" aria-hidden="true">
+      <button class="panel-close" type="button" data-close-panel>Close</button>
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Search menu, gallery, reservations" aria-label="Search keyword">
+        <button type="submit" aria-label="Submit search"></button>
+      </form>
+    </aside>
+
+    <button class="to-top" type="button" data-to-top aria-label="Back to top"></button>
+    <div class="backdrop" data-backdrop></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
