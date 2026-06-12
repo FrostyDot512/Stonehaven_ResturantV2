@@ -74,17 +74,20 @@ if (menuTabs) {
 
 const panels = document.querySelectorAll("[data-panel]");
 const backdrop = document.querySelector("[data-backdrop]");
+const panelTriggers = document.querySelectorAll("[data-open-panel]");
 
 function closePanels() {
   panels.forEach((panel) => {
     panel.classList.remove("is-open");
     panel.setAttribute("aria-hidden", "true");
   });
+  panelTriggers.forEach((trigger) => trigger.setAttribute("aria-expanded", "false"));
   if (backdrop) backdrop.classList.remove("is-visible");
   document.body.classList.remove("panel-open");
 }
 
-document.querySelectorAll("[data-open-panel]").forEach((button) => {
+panelTriggers.forEach((button) => {
+  button.setAttribute("aria-expanded", "false");
   button.addEventListener("click", (event) => {
     event.preventDefault();
     closePanels();
@@ -92,6 +95,7 @@ document.querySelectorAll("[data-open-panel]").forEach((button) => {
     if (!panel) return;
     panel.classList.add("is-open");
     panel.setAttribute("aria-hidden", "false");
+    button.setAttribute("aria-expanded", "true");
     if (backdrop) backdrop.classList.add("is-visible");
     document.body.classList.add("panel-open");
   });
@@ -101,6 +105,9 @@ document.querySelectorAll("[data-close-panel], .side-panel__nav a").forEach((ite
   item.addEventListener("click", closePanels);
 });
 if (backdrop) backdrop.addEventListener("click", closePanels);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closePanels();
+});
 
 document.querySelectorAll(".search-form").forEach((form) => {
   form.addEventListener("submit", (event) => {
@@ -207,7 +214,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.14 });
+}, { threshold: 0.05, rootMargin: "0px 0px -50px 0px" });
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
 const filterRoot = document.querySelector("[data-gallery-filter]");
